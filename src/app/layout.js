@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 export default function RootLayout({ children }) {
   const [loading, setloading] = useState(true);
   const currentPage = usePathname();
-
+  const [path] = useState(currentPage);
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           <Loading />
         ) : (
           <>
-            {currentPage.includes("thankYou") === false && <Navbar />}
+            {path.includes("thankYou") === false && <Navbar />}
             {children}
           </>
         )}

@@ -3,16 +3,13 @@ import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
-import { usePathname } from "next/navigation";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, showNavbar = true }) {
   const [loading, setloading] = useState(true);
-  const currentPage = usePathname();
-  const [path] = useState(currentPage);
   useEffect(() => {
     setTimeout(() => {
       setloading(false);
-    }, 2000);
+    }, 1500);
   }, []);
   return (
     <html lang="en">
@@ -21,7 +18,7 @@ export default function RootLayout({ children }) {
           <Loading />
         ) : (
           <>
-            {path.includes("thankYou") === false && <Navbar />}
+            {showNavbar && <Navbar />}
             {children}
           </>
         )}

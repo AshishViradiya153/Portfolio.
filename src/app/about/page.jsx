@@ -1,9 +1,10 @@
 import SkillCard from "@/components/skillCard/SkillCard";
 import React from "react";
 import { skills } from "../../../data";
+import RootLayout from "../layout";
 const page = () => {
   return (
-    <>
+    <RootLayout showNavbar={true}>
       <div className="flex background_color  min-h-screen pt-20">
         <div className="flex flex-col items-center  w-full h-full ">
           <div className="flex flex-col pt-5 items-center gap-2 ">
@@ -108,7 +109,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    </>
+    </RootLayout>
   );
 };
 

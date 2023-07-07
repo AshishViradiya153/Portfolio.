@@ -11,7 +11,7 @@ const MainContainer = () => {
           <h1 className="lineUp flex justify-center   w-full h-full text-center mt-44 text-white/90 uppercase font-semibold text-6xl">
             Hello, I am Ashish Viradiya
           </h1>
-          <h2 className="flex text-white font-thin justify-center flex-col text-xl max-w-2xl text-center font-medium text-effect">
+          <h2 className="flex text-white  justify-center flex-col text-xl max-w-2xl text-center font-medium text-effect">
             <span>
               I have a recently complated a bechelor in Computer application
               since march 2022. <b />I have a passion for all thing technology

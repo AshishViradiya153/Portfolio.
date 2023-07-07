@@ -35,7 +35,7 @@ const page = () => {
             <input
               type="hidden"
               name="_next"
-              value="http://localhost:3000/thankYou"
+              value="https://ashishviradiya.netlify.app/thankYou"
             ></input>
             <div className="flex flex-row items-center border-2 px-2 py-2 rounded-lg gap-6 ">
               <label className="whitespace-nowrap  font-dosis font-semibold text-lg">

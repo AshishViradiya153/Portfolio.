@@ -5,13 +5,13 @@ import React from "react";
 const MainContainer = () => {
   const recipientEmail = "ashishviradiya153@gmail.com";
   return (
-    <div className="flex bg-hero-pattern fixed top-0 left-0 bg-cover bg-no-repeat w-screen h-screen">
-      <div className="bg-primary/40 w-full flex-col justify-between  font-dosis h-full flex pt-10">
+    <div className="flex bg-hero-pattern fixed top-0 left-0 bg-cover bg-no-repeat w-screen min-h-screen">
+      <div className="bg-primary/40 w-full flex-col justify-between  font-dosis min-h-screen  flex pt-10">
         <div className="flex flex-col justify-center items-center gap-4">
-          <h1 className="lineUp flex justify-center   w-full h-full text-center mt-44 text-white/90 uppercase font-semibold text-6xl">
+          <h1 className="lineUp flex justify-center   w-full h-full text-center mt-32 md:mt-44 text-white/90 uppercase md:font-semibold text-5xl px-2 md:text-6xl">
             Hello, I am Ashish Viradiya
           </h1>
-          <h2 className="flex text-white  justify-center flex-col text-xl max-w-2xl text-center font-medium text-effect">
+          <h2 className="flex text-white  justify-center flex-col text-lg  md:text-xl max-w-2xl px-5 text-center font-medium text-effect">
             <span>
               I have a recently complated a bechelor in Computer application
               since march 2022. <b />I have a passion for all thing technology
@@ -31,8 +31,8 @@ const MainContainer = () => {
             </button> */}
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center pr-12 mb-3 font-semibold ">
-          <div className="flex justify-center gap-1 flex-col ml-12">
+        <div className="flex flex-row justify-between items-center w-full px-3 md:px-6  mb-3 font-semibold ">
+          <div className="flex justify-center gap-1 flex-col ">
             <Link href="https://github.com/AshishViradiya153">
               <svg
                 viewBox="0 0 22.5 22"

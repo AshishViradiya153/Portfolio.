@@ -12,15 +12,5 @@ export default function Home() {
       setloading(false);
     }, 1500);
   }, []);
-  return (
-    <RootLayout showNavbar={true}>
-      {loading ? (
-        <Loader />
-      ) : (
-        <main>
-          <MainContainer />
-        </main>
-      )}
-    </RootLayout>
-  );
+  return <>{loading ? <Loader /> : <MainContainer />}</>;
 }

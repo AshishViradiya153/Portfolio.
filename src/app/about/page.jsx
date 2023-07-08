@@ -1,10 +1,8 @@
 import SkillCard from "@/components/skillCard/SkillCard";
 import React from "react";
 import { skills } from "../../../data";
-import RootLayout from "../layout";
 const page = () => {
   return (
-    <RootLayout showNavbar={true}>
       <div className="flex background_color  min-h-screen pt-20">
         <div className="flex flex-col items-center  w-full h-full ">
           <div className="flex flex-col pt-5 items-center gap-2 ">
@@ -12,14 +10,12 @@ const page = () => {
               About me
             </p>
             <span className="w-12 h-1 rounded-md mb-2 bg-slate-400 " />
-            <p className="text-effect w-3/5 text-center text-slate-300  font-normal text-xl">
-              <span>
-                Here you will find more information about me, what I do, and my
-                current skills mostly in terms of programming and technology
-              </span>
+            <p className="text-effect  text-center  text-slate-300 flex flex-col font-normal max-w-5xl px-10 md:px-32 text-lg md:text-xl">
+              Here you will find more information about me, what I do, and my
+              current skills mostly in terms of programming and technology
             </p>
           </div>
-          <div className="flex pt-12 px-28 gap-16  pb-6">
+          <div className="flex pt-12 flex-col md:flex-row px-8 md:px-24 xl:px-28 gap-16  pb-6">
             <div className="flex flex-col flex-1  ">
               <div className="flex items-end gap-3 flex-col ">
                 <p className=" lineUp uppercase text-[#CC8BF2] text-xl font-medium ">
@@ -91,9 +87,9 @@ const page = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col flex-1 uppercase">
-              <div className="flex items-start gap-3 flex-col ">
-                <p className=" lineUp uppercase text-[#CC8BF2] text-xl font-medium ">
+            <div className="flex flex-col flex-1  uppercase">
+              <div className="flex items-end md:items-start  gap-3 flex-col ">
+                <p className=" lineUp uppercase  text-[#CC8BF2] text-xl font-medium ">
                   technical skills
                 </p>
                 <span className="w-12 h-1 rounded-md mb-2 bg-slate-400 " />
@@ -109,7 +105,6 @@ const page = () => {
           </div>
         </div>
       </div>
-    </RootLayout>
   );
 };
 

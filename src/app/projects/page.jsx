@@ -82,7 +82,6 @@ const data = [
 ];
 const page = () => {
   return (
-    <RootLayout showNavbar={true}>
       <div className="flex background_color flex-col  min-h-screen pt-24 ">
         <Spotlight className="px-10  mb-5 grid  gap-6 sm:px-24 md:grid-cols-2 lg:grid-cols-3 items-start  group">
           {/* Card */}
@@ -147,7 +146,6 @@ const page = () => {
           })}
         </Spotlight>
       </div>
-    </RootLayout>
   );
 };
 

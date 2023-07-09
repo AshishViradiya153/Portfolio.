@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="flex flex-col items-center leading-[0.375rem]">
         <Link
           href="/"
-          className="text-eff font-dosis whitespace-nowrap uppercase tracking-[0.3rem] font-semibold text-2xl "
+          className="text-eff font-dosis whitespace-nowrap uppercase tracking-[0.3rem] font-semibold text-xl sm:text-2xl "
         >
           Ashish Viradiya
         </Link>
@@ -64,6 +64,21 @@ const Navbar = () => {
       </div>
       {openSidebar && (
         <div className="fixed font-dosis font-light text-6xl gap-8 overflow-y-hidden  flex justify-center items-center sm:hidden flex-col w-screen z-50 backdrop-blur-md  lineRight h-screen top-0 right-0">
+          <div className="absolute top-10 right-10">
+            <svg
+              onClick={toggalOpenSidebar}
+              viewBox="0 0 22 22"
+              strokeWidth={2}
+              stroke="deepskyblue"
+              className="w-8 h-8 cursor-pointer"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
           <div
             onClick={toggalOpenSidebar}
             className=" hover:scale-110 py-1   hover:tracking-wider  transition hover:-translate-y-1 cursor-pointer duration-300 "

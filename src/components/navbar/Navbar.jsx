@@ -41,7 +41,7 @@ const Navbar = () => {
           Ashish Viradiya
         </Link>
         <div className="w-full whitespace-nowrap flex justify-end text-blue-400 pr-1">
-          Fronend developer
+          Software Developer
         </div>
       </div>
 

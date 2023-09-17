@@ -16,11 +16,11 @@ export const skills = [
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
-    tag: "Scss",
+    tag: "Scss/SASS",
     link: "https://sass-lang.com/",
   },
   {
-    tag: "tailwind",
+    tag: "tailwind css",
     link: "https://tailwindcss.com/",
   },
   {
@@ -31,7 +31,10 @@ export const skills = [
     tag: "styled-components",
     link: "https://styled-components.com/",
   },
-
+  {
+    tag: "Redux",
+    link: "https://redux.js.org/",
+  },
   {
     tag: "Redux Toolkit",
     link: "https://redux-toolkit.js.org/",
@@ -62,7 +65,23 @@ export const skills = [
     link: "https://www.postgresql.org/",
   },
   {
+    tag: "firebase",
+    link: "https://firebase.google.com/",
+  },
+  {
     tag: "Soket.io",
     link: "https://socket.io/docs/",
+  },
+  {
+    tag: "Google analytics",
+    link: "https://analytics.google.com/analytics/academy/course/6",
+  },
+  {
+    tag: "Google tag manager",
+    link: "https://tagmanager.google.com/",
+  },
+  {
+    tag: "Next SEO",
+    link: "https://nextjs.org/learn/seo/introduction-to-seo",
   },
 ];

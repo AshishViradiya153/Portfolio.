@@ -1,16 +1,26 @@
 "use client";
 
 import MainContainer from "@/components/mainContainer/MainContainer";
-import RootLayout from "./layout";
 import { useEffect, useState } from "react";
 import Loader from "@/components/Loader/Loader";
 
 export default function Home() {
-  const [loading, setloading] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => {
-      setloading(false);
-    }, 1500);
+    const checkIfPageIsFullyLoaded = () => {
+      if (document.readyState === "complete") {
+        setLoading(false);
+      }
+    };
+
+    checkIfPageIsFullyLoaded();
+
+    window.addEventListener("load", checkIfPageIsFullyLoaded);
+
+    return () => {
+      window.removeEventListener("load", checkIfPageIsFullyLoaded);
+    };
   }, []);
+
   return <>{loading ? <Loader /> : <MainContainer />}</>;
 }

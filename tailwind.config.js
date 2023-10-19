@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('/images/mountain2.jpg') ",
+        "hero-pattern": "url('/images/mountain2.webp') ",
       },
       fontFamily: {
         dosis: ["Dosis", "sans-serif"],

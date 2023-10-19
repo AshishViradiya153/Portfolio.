@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const path = usePathname();
-  console.log("🚀 ~ file: Navbar.jsx:9 ~ Navbar ~ path:", path);
   const [openSidebar, setOpenSidebar] = useState(false);
 
   useEffect(() => {
@@ -45,7 +44,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex gap-8 justify-between items-center  text-md text-lg font-normal">
+      <div className="hidden sm:flex gap-8 justify-between items-center  text-md text-base tracking-widest font-normal">
         <div className="py-1 hover:border-b-2 rounded-sm border-blue-400 transition hover:-translate-y-1 cursor-pointer duration-300 ">
           <Link className="outline-b-2 text-white uppercase" href="/about">
             About

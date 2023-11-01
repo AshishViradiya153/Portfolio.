@@ -7,16 +7,18 @@ const MainContainer = () => {
   const recipientEmail = "ashishviradiya153@gmail.com";
   return (
     <div className="flex background_color bg-hero-pattern fixed top-0 left-0 bg-cover bg-no-repeat w-screen min-h-screen">
-      <div className="bg-primary/40  w-full flex-col justify-between  font-dosis min-h-screen  flex pt-10">
-        <div className="flex flex-col justify-center items-center gap-4">
-          <h1 className="lineUp flex justify-center   w-full h-full text-center mt-23 md:mt-44 text-white/90 uppercase md:font-semibold text-5xl px-2 md:text-6xl">
+      <div className="bg-primary/40  w-full flex-col justify-between  font-dosis min-h-screen  flex pt-20">
+        <div className="flex flex-col justify-center items-center gap-8  mt-[15vh] md:mt-[24vh] sm:mt-[17vh]">
+          <h1 className="lineUp flex justify-center   w-full h-full text-center text-white/90 uppercase md:font-semibold text-5xl px-2 md:text-6xl">
             Hello, I am Ashish Viradiya
           </h1>
-          <h2 className="flex text-white  justify-center flex-col text-lg  md:text-xl max-w-2xl px-12 text-center font-medium text-effect">
-            A tech alchemist, turning ideas into code-driven gold. I have a
-            passion for all thing technology and creative things development.
+          <h2 className="flex text-white  justify-center flex-col text-lg  md:text-xl max-w-2xl sm:px-12 px-8 text-center font-medium text-effect">
+            I'm a frontend developer committed to crafting websites that work
+            seamlessly across all browsers. With a blend of design and coding
+            skills, I create user-friendly, responsive, and browser-compatible
+            web experiences.
           </h2>
-          <div className="flex flex-row gap-12 uppercase flex-wrap mt-10  text-white">
+          <div className="flex flex-row gap-12 uppercase flex-wrap sm:mt-8 mt-0 text-white">
             <Link
               href={"/projects"}
               className="uppercase duration-300 hover:scale-110 tracking-widest background_color hover:shadow-xl  py-3 px-5 rounded-lg lineRight"
